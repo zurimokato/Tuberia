@@ -8,7 +8,7 @@
 #define BUFFER  1024
 #endif
 
-void manejador(int sig);
+
 void leerDeArchivo(int tub[],char cadena[],char nombreArchivo[]);
 void imprimirMensaje(int tub[],char cadena[]);
 
