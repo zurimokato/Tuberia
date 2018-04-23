@@ -16,7 +16,6 @@ int main(){
 	pid_t hijos[2], padre;
     int tub1[2],tub2[2];
     char cadena[BUFFER];
-    signal(SIGUSR1,manejador);
     pipe(tub1);
     pipe(tub2);
     padre=getpid();
@@ -46,9 +45,7 @@ int main(){
   	
 	return 0;
 }
-void manejador(int sig){
 
-}
 
 void leerDeArchivo(int tub[],char cadena[],char nombreArchivo[]){
 	int i=0;
